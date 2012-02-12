@@ -1,0 +1,205 @@
+"","ctryname","aclpcode","cowcode","cowcode2","ccdcodelet","ccdcodenum","wdicode","imf_code","politycode","bankscode","dpicode","uncode","un_region","un_region_name","un_continent","un_continent_name","aclp_region","ccode"
+"1","Afghanistan",142,700,700,"AFG",1,"AFG",512,700,10,"AFG",4,34,"Southern Asia",142,"Asia",9,700
+"64","Albania",143,339,339,"ALB",3,"ALB",914,339,20,"ALB",8,39,"Southern Europe",150,"Europe",9,339
+"127","Algeria",1,615,615,"DZA",50,"DZA",612,615,30,"DZA",12,15,"Northern Africa",2,"Africa",6,615
+"174","Andorra",195,232,232,"ARR",7,"ADO",NA,232,32,"ADO",20,39,"Southern Europe",150,"Europe",10,232
+"190","Angola",2,540,540,"AGO",2,"AGO",614,540,35,"AGO",24,17,"Middle Africa",2,"Africa",1,540
+"224","Antigua & Barbuda",144,58,58,"ATG",8,"ATG",311,58,37,"ATG",28,29,"Caribbean",19,"Americas",8,58
+"252","Argentina",66,160,160,"ARG",5,"ARG",213,160,40,"ARG",32,5,"South America",19,"Americas",7,160
+"315","Armenia",145,371,371,"ARM",6,"ARM",911,371,45,"ARM",51,145,"Western Asia",142,"Asia",9,371
+"333","Australia",129,900,900,"AUS",9,"AUS",193,900,50,"AUS",36,53,"Australia and New Zealand",9,"Oceania",10,900
+"396","Austria",101,305,305,"AUT",10,"AUT",122,305,61,"AUT",40,155,"Western Europe",150,"Europe",10,305
+"459","Azerbaijan",147,373,373,"AZE",11,"AZE",912,373,64,"AZE",31,145,"Western Asia",142,"Asia",9,373
+"477","Bahamas",49,31,31,"BHS",19,"BHS",313,31,69,"BHS",44,29,"Caribbean",19,"Americas",8,31
+"513","Bahrain",136,692,692,"BHR",18,"BHR",419,692,65,"BHR",48,145,"Western Asia",142,"Asia",11,692
+"551","Bangladesh",78,771,771,"BGD",16,"BGD",513,771,901,"BGD",50,34,"Southern Asia",142,"Asia",2,771
+"589","Barbados",50,53,53,"BRB",25,"BRB",316,53,70,"BRB",52,29,"Caribbean",19,"Americas",8,53
+"632","Belarus",149,370,370,"BLR",21,"BLR",913,370,75,"BLR",112,151,"Eastern Europe",150,"Europe",9,370
+"650","Belgium",102,211,211,"BEL",13,"BEL",124,211,80,"BEL",56,155,"Western Europe",150,"Europe",10,211
+"713","Belize",51,80,80,"BLZ",22,"BLZ",339,80,90,"BLZ",84,13,"Central America",19,"Americas",8,80
+"741","Benin",3,434,434,"BEN",14,"BEN",638,434,310,"BEN",204,11,"Western Africa",2,"Africa",1,434
+"790","Bhutan",148,760,760,"BTN",27,"BTN",514,760,66,"BTN",64,34,"Southern Asia",142,"Asia",2,760
+"853","Bolivia",67,145,145,"BOL",23,"BOL",218,145,100,"BOL",68,5,"South America",19,"Americas",7,145
+"916","Bosnia and Herzegovina",150,346,346,"BIH",20,"BIH",963,346,107,"BIH",70,39,"Southern Europe",150,"Europe",9,346
+"934","Botswana",4,571,571,"BWA",28,"BWA",616,571,110,"BWA",72,18,"Southern Africa",2,"Africa",1,571
+"977","Brazil",68,140,140,"BRA",24,"BRA",223,140,120,"BRA",76,5,"South America",19,"Americas",7,140
+"1040","Brunei Darussalam",151,835,835,"BRN",26,"BRN",516,835,125,"BRN",96,35,"South-Eastern Asia",142,"Asia",4,835
+"1065","Bulgaria",103,355,355,"BGR",17,"BGR",918,355,130,"BGR",100,151,"Eastern Europe",150,"Europe",9,355
+"1128","Burkina Faso",5,439,439,"BFA",15,"BFA",748,439,1230,"BFA",854,11,"Western Africa",2,"Africa",1,439
+"1177","Burundi",6,516,516,"BDI",12,"BDI",618,516,150,"BDI",108,14,"Eastern Africa",2,"Africa",1,516
+"1224","Cambodia",152,811,811,"KHM",93,"KHM",522,811,160,"KHM",116,35,"South-Eastern Asia",142,"Asia",4,811
+"1280","Cameroon",7,471,471,"CMR",35,"CMR",622,471,170,"CMR",120,17,"Middle Africa",2,"Africa",1,471
+"1329","Canada",52,20,20,"CAN",30,"CAN",156,20,180,"CAN",124,21,"Northern America",19,"Americas",10,20
+"1392","Cape Verde",8,402,402,"CPV",39,"CPV",624,402,185,"CPV",132,11,"Western Africa",2,"Africa",1,402
+"1426","Central African Republic",9,482,482,"CAF",29,"CAF",626,482,190,"CAF",140,17,"Middle Africa",2,"Africa",1,482
+"1475","Chad",10,483,483,"TCD",168,"TCD",628,483,210,"TCD",148,17,"Middle Africa",2,"Africa",1,483
+"1524","Chile",69,155,155,"CHL",32,"CHL",228,155,220,"CHL",152,5,"South America",19,"Americas",7,155
+"1587","China",79,710,710,"CHN",33,"CHN",924,710,230,"CHN",156,30,"Eastern Asia",142,"Asia",3,710
+"1650","Colombia",70,100,100,"COL",37,"COL",233,100,240,"COL",170,5,"South America",19,"Americas",7,100
+"1713","Comoros",11,581,581,"COM",38,"COM",632,581,245,"COM",174,14,"Eastern Africa",2,"Africa",1,581
+"1747","Congo (Brazzaville, Republic of Congo)",12,484,484,"COG",36,"COG",634,484,250,"COG",178,17,"Middle Africa",2,"Africa",1,484
+"1796","Costa Rica",53,94,94,"CRI",40,"CRI",238,94,270,"CRI",188,13,"Central America",19,"Americas",7,94
+"1859","Cote d'Ivoire",21,437,437,"CIV",34,"CIV",662,437,580,"CIV",384,11,"Western Africa",2,"Africa",1,437
+"1908","Croatia",153,344,344,"HRV",76,"HRV",960,344,275,"HRV",191,39,"Southern Europe",150,"Europe",9,344
+"1926","Cuba",154,40,40,"CUB",41,"CUB",928,40,280,"CUB",192,29,"Caribbean",19,"Americas",7,40
+"1989","Cyprus",187,352,352,"CYP",42,"CYP",423,352,290,"CYP",196,145,"Western Asia",142,"Asia",10,352
+"2012","Cyprus",188,352,352,"CYP",42,"CYP",423,352,290,"CYP",196,145,"Western Asia",142,"Asia",10,352
+"2038","Czech Republic",155,316,316,"CZE",43,"CZE",935,316,301,"CZE",203,151,"Eastern Europe",150,"Europe",9,316
+"2054","Czechoslovakia",104,315,315,"CZK",44,"",934,315,300,"CSK",NA,151,"Eastern Europe",150,"Europe",9,315
+"2101","Democratic Republic of the Congo (Zaire, Congo-Kinshasha)",46,490,490,"ZAR",196,"ZAR",636,490,260,"ZAR",180,17,"Middle Africa",2,"Africa",1,490
+"2150","Denmark",105,390,390,"DNK",48,"DNK",128,390,320,"DNK",208,154,"Northern Europe",150,"Europe",10,390
+"2213","Djibouti",13,522,522,"DJI",46,"DJI",611,522,325,"DJI",262,14,"Eastern Africa",2,"Africa",1,522
+"2245","Dominica",157,54,54,"DMA",47,"DMA",321,54,327,"DMA",212,29,"Caribbean",19,"Americas",8,54
+"2276","Dominican Republic",54,42,42,"DOM",49,"DOM",243,42,330,"DOM",214,29,"Caribbean",19,"Americas",7,42
+"2339","East Timor",860,860,860,"ETI",57,"TMP",NA,860,NA,"TMP",626,35,"South-Eastern Asia",142,"Asia",NA,860
+"2346","Ecuador",71,130,130,"ECU",51,"ECU",248,130,340,"ECU",218,5,"South America",19,"Americas",7,130
+"2409","Egypt",14,651,651,"EGY",52,"EGY",469,651,NA,"EGY",818,15,"Northern Africa",2,"Africa",6,651
+"2472","El Salvador",55,92,92,"SLV",155,"SLV",253,92,350,"SLV",222,13,"Central America",19,"Americas",7,92
+"2535","Equatorial Guinea",158,411,411,"GNQ",70,"GNQ",642,411,355,"GNQ",226,17,"Middle Africa",2,"Africa",1,411
+"2576","Eritrea",160,531,531,"ERI",53,"ERI",643,531,375,"ERI",232,14,"Eastern Africa",2,"Africa",1,531
+"2592","Estonia",159,366,366,"EST",55,"EST",939,366,360,"EST",233,154,"Northern Europe",150,"Europe",9,366
+"2610","Ethiopia",15,530,530,"ETH",56,"ETH",644,530,370,"ET1",231,14,"Eastern Africa",2,"Africa",1,530
+"2657","Ethiopia",194,530,530,"ETH",56,"ETH",644,529,370,"ETH",231,14,"Eastern Africa",2,"Africa",1,530
+"2673","Fiji",130,950,950,"FJI",59,"FJI",819,950,1216,"FJI",242,54,"Melanesia",9,"Oceania",5,950
+"2712","Finland",106,375,375,"FIN",58,"FIN",172,375,380,"FIN",246,154,"Northern Europe",150,"Europe",10,375
+"2775","France",107,220,220,"FRA",60,"FRA",132,220,390,"FRA",250,155,"Western Europe",150,"Europe",10,220
+"2838","Gabon",16,481,481,"GAB",62,"GAB",646,481,400,"GAB",266,17,"Middle Africa",2,"Africa",1,481
+"2887","Gambia",17,420,420,"GMB",68,"GMB",648,420,410,"GMB",270,11,"Western Africa",2,"Africa",1,420
+"2931","Georgia",161,372,372,"GEO",65,"GEO",915,372,415,"GEO",268,145,"Western Asia",142,"Asia",9,372
+"2949","Germany",191,255,255,"DEU",45,"DEU",134,255,420,"DEU",276,155,"Western Europe",150,"Europe",10,255
+"2968","Germany, East",109,265,265,"GDR",64,"",NA,265,430,"DDR",NA,155,"Western Europe",150,"Europe",9,265
+"3009","Germany, West",108,260,260,"GDR",199,"DEU",134,260,431,"WGE",276,155,"Western Europe",150,"Europe",10,260
+"3050","Ghana",18,452,452,"GHA",66,"GHA",652,452,440,"GHA",288,11,"Western Africa",2,"Africa",1,452
+"3102","Greece",110,350,350,"GRC",71,"GRC",174,350,450,"GRC",300,39,"Southern Europe",150,"Europe",10,350
+"3165","Grenada",56,55,55,"GRD",72,"GRD",328,55,455,"GRD",308,29,"Caribbean",19,"Americas",8,55
+"3200","Guatemala",57,90,90,"GTM",73,"GTM",258,90,460,"GTM",320,13,"Central America",19,"Americas",7,90
+"3263","Guinea",19,438,438,"GIN",67,"GIN",656,438,470,"GIN",324,11,"Western Africa",2,"Africa",1,438
+"3314","Guinea-Bissau",20,404,404,"GNB",69,"GNB",654,404,475,"GNB",624,11,"Western Africa",2,"Africa",1,404
+"3349","Guyana",72,110,110,"GUY",74,"GUY",336,110,480,"GUY",328,5,"South America",19,"Americas",8,110
+"3392","Haiti",58,41,41,"HTI",77,"HTI",263,41,490,"HTI",332,29,"Caribbean",19,"Americas",8,41
+"3455","Honduras",59,91,91,"HND",75,"HND",268,91,500,"HND",340,13,"Central America",19,"Americas",7,91
+"3518","Hungary",111,310,310,"HUN",78,"HUN",944,310,62,"HUN",348,151,"Eastern Europe",150,"Europe",9,310
+"3581","Iceland",112,395,395,"ISL",84,"ISL",176,395,510,"ISL",352,154,"Northern Europe",150,"Europe",10,395
+"3644","India",80,750,750,"IND",80,"IND",534,750,520,"IND",356,34,"Southern Asia",142,"Asia",2,750
+"3706","Indonesia",81,850,850,"IDN",79,"IDN",536,850,530,"IDN",360,35,"South-Eastern Asia",142,"Asia",4,850
+"3766","Iran",82,630,630,"IRN",82,"IRN",429,630,540,"IRN",364,34,"Southern Asia",142,"Asia",6,630
+"3829","Iraq",83,645,645,"IRQ",83,"IRQ",433,645,550,"IRQ",368,145,"Western Asia",142,"Asia",6,645
+"3892","Ireland",113,205,205,"IRL",81,"IRL",178,205,1212,"IRL",372,154,"Northern Europe",150,"Europe",10,205
+"3955","Israel",84,666,666,"ISR",85,"ISR",436,666,560,"ISR",376,145,"Western Asia",142,"Asia",6,666
+"4016","Italy",114,325,325,"ITA",86,"ITA",136,325,570,"ITA",380,39,"Southern Europe",150,"Europe",10,325
+"4079","Jamaica",60,51,51,"JAM",87,"JAM",343,51,590,"JAM",388,29,"Caribbean",19,"Americas",8,51
+"4126","Japan",85,740,740,"JPN",89,"JPN",158,740,600,"JPN",392,30,"Eastern Asia",142,"Asia",10,740
+"4189","Jordan",86,663,663,"JOR",88,"JOR",439,663,610,"JOR",400,145,"Western Asia",142,"Asia",6,663
+"4252","Kazakhstan",162,705,705,"KAZ",90,"KAZ",916,705,615,"KAZ",398,143,"Central Asia",142,"Asia",9,705
+"4270","Kenya",22,501,501,"KEN",91,"KEN",664,501,620,"KEN",404,14,"Eastern Africa",2,"Africa",1,501
+"4316","Kiribati",163,946,946,"KIR",94,"KIR",826,946,625,"KIR",296,57,"Micronesia",9,"Oceania",5,946
+"4346","Kuwait",137,690,690,"KWT",97,"KWT",443,690,640,"KWT",414,145,"Western Asia",142,"Asia",11,690
+"4394","Kyrgyzstan",165,703,703,"KGZ",92,"KGZ",917,703,645,"KGZ",417,143,"Central Asia",142,"Asia",9,703
+"4412","Laos",88,812,812,"LAO",98,"LAO",544,812,650,"LAO",418,35,"South-Eastern Asia",142,"Asia",4,812
+"4468","Latvia",166,367,367,"LVA",108,"LVA",941,367,660,"LVA",428,154,"Northern Europe",150,"Europe",9,367
+"4486","Lebanon",167,660,660,"LBN",99,"LBN",446,660,670,"LBN",422,145,"Western Asia",142,"Asia",6,660
+"4549","Lesotho",23,570,570,"LSO",105,"LSO",666,570,680,"LSO",426,18,"Southern Africa",2,"Africa",1,570
+"4592","Liberia",24,450,450,"LBR",100,"LBR",668,450,690,"LBR",430,11,"Western Africa",2,"Africa",1,450
+"4655","Libyan Arab Jamahiriya",193,620,620,"LBY",101,"LBY",672,620,700,"LBY",434,15,"Northern Africa",2,"Africa",11,620
+"4713","Liechtenstein",196,223,223,"LIE",103,"LIE",NA,223,705,"LIE",438,155,"Western Europe",150,"Europe",10,223
+"4776","Lithuania",168,368,368,"LTU",106,"LTU",946,368,710,"LTU",440,154,"Northern Europe",150,"Europe",9,368
+"4794","Luxembourg",115,212,212,"LUX",107,"LUX",137,212,720,"LUX",442,155,"Western Europe",150,"Europe",10,212
+"4857","Macedonia",169,343,343,"MKD",115,"MKD",962,343,725,"MKD",807,39,"Southern Europe",150,"Europe",9,343
+"4875","Madagascar",25,580,580,"MDG",111,"MDG",674,580,730,"MDG",450,14,"Eastern Africa",2,"Africa",1,580
+"4924","Malawi",26,553,553,"MWI",123,"MWI",676,553,740,"MWI",454,14,"Eastern Africa",2,"Africa",1,553
+"4969","Malaysia",89,820,820,"MYS",124,"MYS",548,820,750,"MYS",458,35,"South-Eastern Asia",142,"Asia",4,820
+"5021","Maldives",170,781,781,"MDV",112,"MDV",556,781,760,"MDV",462,34,"Southern Asia",142,"Asia",2,781
+"5065","Mali",27,432,432,"MLI",116,"MLI",678,432,770,"MLI",466,11,"Western Africa",2,"Africa",1,432
+"5114","Malta",116,338,338,"MLT",117,"MLT",181,338,780,"MLT",470,39,"Southern Europe",150,"Europe",10,338
+"5159","Marshall Islands",197,983,983,"MHL",114,"MHL",867,983,785,"MHL",584,57,"Micronesia",9,"Oceania",5,983
+"5178","Mauritania",28,435,435,"MRT",121,"MRT",682,435,790,"MRT",478,11,"Western Africa",2,"Africa",1,435
+"5227","Mauritius",29,590,590,"MUS",122,"MUS",684,590,800,"MUS",480,14,"Eastern Africa",2,"Africa",1,590
+"5268","Mexico",61,70,70,"MEX",113,"MEX",273,70,810,"MEX",484,13,"Central America",19,"Americas",7,70
+"5331","Micronesia, Federated States of",189,987,987,"FSN",61,"FSM",868,987,812,"FSM",583,57,"Micronesia",9,"Oceania",5,987
+"5349","Moldova",171,359,359,"MDA",110,"MDA",921,359,813,"MDA",498,151,"Eastern Europe",150,"Europe",9,359
+"5367","Mongolia",90,712,712,"MNG",119,"MNG",948,712,820,"MNG",496,30,"Eastern Asia",142,"Asia",3,712
+"5430","Montenegro",341,341,341,"MNG",200,"",NA,NA,NA,"",499,39,"Southern Europe",150,"Europe",NA,341
+"5433","Morocco",30,600,600,"MAR",109,"MAR",686,600,830,"MAR",504,15,"Northern Africa",2,"Africa",6,600
+"5486","Mozambique",31,541,541,"MOZ",120,"MOZ",688,541,835,"MOZ",508,14,"Eastern Africa",2,"Africa",1,541
+"5520","Myanmar",91,775,775,"MMR",118,"MMR",518,775,140,"MMR",104,35,"South-Eastern Asia",142,"Asia",4,775
+"5581","Namibia",172,565,565,"NAM",125,"NAM",728,565,837,"NAM",516,18,"Southern Africa",2,"Africa",1,565
+"5600","Nauru",146,970,970,"NUR",132,"",836,970,NA,"",520,57,"Micronesia",9,"Oceania",5,970
+"5641","Nepal",92,790,790,"NPL",131,"NPL",558,790,840,"NPL",524,34,"Southern Asia",142,"Asia",2,790
+"5704","Netherlands",117,210,210,"NLD",129,"NLD",138,210,850,"NLD",528,155,"Western Europe",150,"Europe",10,210
+"5767","New Zealand",131,920,920,"NZL",133,"NZL",196,920,860,"NZL",554,53,"Australia and New Zealand",9,"Oceania",10,920
+"5830","Nicaragua",62,93,93,"NIC",128,"NIC",278,93,870,"NIC",558,13,"Central America",19,"Americas",7,93
+"5893","Niger",32,436,436,"NER",126,"NER",692,436,880,"NER",562,11,"Western Africa",2,"Africa",1,436
+"5942","Nigeria",33,475,475,"NGA",127,"NGA",694,475,890,"NGA",566,11,"Western Africa",2,"Africa",1,475
+"5991","North Korea",164,731,731,"PRK",142,"PRK",NA,731,631,"PRK",408,30,"Eastern Asia",142,"Asia",3,731
+"6052","Norway",118,385,385,"NOR",130,"NOR",142,385,1091,"NOR",578,154,"Northern Europe",150,"Europe",10,385
+"6115","Oman",138,698,698,"OMN",134,"OMN",449,698,895,"OMN",512,145,"Western Asia",142,"Asia",11,698
+"6154","Pakistan",93,770,770,"PAK",135,"PAK",564,769,900,"PAK",586,34,"Southern Asia",142,"Asia",2,770
+"6179","Pakistan",93,770,770,"PAK",135,"PAK",564,770,900,"PAK",586,34,"Southern Asia",142,"Asia",2,770
+"6216","Palau",198,986,986,"PLU",139,"PLW",565,986,905,"PLW",585,57,"Micronesia",9,"Oceania",5,986
+"6231","Panama",63,95,95,"PAN",136,"PAN",283,95,910,"PAN",591,13,"Central America",19,"Americas",7,95
+"6294","Papua New Guinea",132,910,910,"PNG",140,"PNG",853,910,915,"PNG",598,54,"Melanesia",9,"Oceania",5,910
+"6328","Paraguay",73,150,150,"PRY",144,"PRY",288,150,920,"PRY",600,5,"South America",19,"Americas",7,150
+"6391","Peru",74,135,135,"PER",137,"PER",293,135,930,"PER",604,5,"South America",19,"Americas",7,135
+"6454","Philippines",94,840,840,"PHL",138,"PHL",566,840,940,"PHL",608,35,"South-Eastern Asia",142,"Asia",4,840
+"6517","Poland",119,290,290,"POL",141,"POL",964,290,950,"POL",616,151,"Eastern Europe",150,"Europe",9,290
+"6580","Portugal",120,235,235,"PRT",143,"PRT",182,235,960,"PRT",620,39,"Southern Europe",150,"Europe",10,235
+"6643","Qatar",139,694,694,"QAT",145,"QAT",453,694,965,"QAT",634,145,"Western Asia",142,"Asia",11,694
+"6681","Romania",121,360,360,"ROM",146,"ROM",968,360,970,"ROM",642,151,"Eastern Europe",150,"Europe",9,360
+"6744","Russian Federation",173,365,374,"RUS",147,"RUS",922,365,1190,"RUS",643,151,"Eastern Europe",150,"Europe",9,365
+"6762","Rwanda",34,517,517,"RWA",148,"RWA",714,517,980,"RWA",646,14,"Eastern Africa",2,"Africa",1,517
+"6809","Samoa",135,990,990,"WSM",190,"WSM",862,990,1270,"WSM",882,61,"Polynesia",9,"Oceania",5,990
+"6856","San Marino",199,331,331,"SMA",156,"SMR",135,331,982,"SMR",674,39,"Southern Europe",150,"Europe",10,331
+"6873","Sao Tome and Principe",175,403,403,"STP",158,"STP",716,403,985,"STP",678,17,"Middle Africa",2,"Africa",1,403
+"6907","Saudi Arabia",140,670,670,"SAU",149,"SAU",456,670,990,"SAU",682,145,"Western Asia",142,"Asia",11,670
+"6970","Senegal",35,433,433,"SEN",151,"SEN",722,433,1000,"SEN",686,11,"Western Africa",2,"Africa",1,433
+"7019","Serbia",342,NA,342,"SEN",201,"",NA,342,NA,"",688,39,"Southern Europe",150,"Europe",NA,NA
+"7022","Serbia and Montenegro",192,345,347,"SEN",202,"YUG",965,347,1290,"YUG",NA,39,"Southern Europe",150,"Europe",9,345
+"7037","Seychelles",36,591,591,"SYC",165,"SYC",718,591,1005,"SYC",690,14,"Eastern Africa",2,"Africa",1,591
+"7070","Sierra Leone",37,451,451,"SLE",154,"SLE",724,451,1010,"SLE",694,11,"Western Africa",2,"Africa",1,451
+"7118","Singapore",95,830,830,"SGP",152,"SGP",576,830,1020,"SGP",702,35,"South-Eastern Asia",142,"Asia",4,830
+"7162","Slovakia",156,317,317,"SVK",160,"SVK",936,317,302,"SVK",703,151,"Eastern Europe",150,"Europe",9,317
+"7178","Slovenia",176,349,349,"SVN",161,"SVN",961,349,1023,"SVN",705,39,"Southern Europe",150,"Europe",9,349
+"7196","Solomon Islands",133,940,940,"SLB",153,"SLB",813,940,1025,"SLB",90,54,"Melanesia",9,"Oceania",5,940
+"7227","Somalia",38,520,520,"SOM",157,"SOM",726,520,1030,"SOM",706,14,"Eastern Africa",2,"Africa",1,520
+"7276","South Africa",39,560,560,"ZAF",195,"ZAF",199,560,1040,"ZAF",710,18,"Southern Africa",2,"Africa",1,560
+"7339","South Korea",87,732,732,"KOR",96,"KOR",542,732,632,"KOR",410,30,"Eastern Asia",142,"Asia",3,732
+"7400","Spain",122,230,230,"ESP",54,"ESP",184,230,1060,"ESP",724,39,"Southern Europe",150,"Europe",10,230
+"7463","Sri Lanka",96,780,780,"LKA",104,"LKA",524,780,200,"LKA",144,34,"Southern Asia",142,"Asia",2,780
+"7524","St. Kitts and Nevis",179,60,60,"KNA",95,"KNA",361,60,1063,"KNA",659,29,"Caribbean",19,"Americas",8,60
+"7550","St. Lucia",174,56,56,"LCA",102,"LCA",362,56,NA,"LCA",662,29,"Caribbean",19,"Americas",8,56
+"7580","St. Vincent and the Grenadines",180,57,57,"VCT",184,"VCT",364,57,1065,"VCT",670,29,"Caribbean",19,"Americas",8,57
+"7610","Sudan",40,625,625,"SDN",150,"SDN",732,625,1070,"SDN",736,15,"Northern Africa",2,"Africa",1,625
+"7663","Suriname",75,115,115,"SUR",159,"SUR",366,115,1075,"SUR",740,5,"South America",19,"Americas",8,115
+"7697","Swaziland",41,572,572,"SWZ",164,"SWZ",734,572,1080,"SWZ",748,18,"Southern Africa",2,"Africa",1,572
+"7738","Sweden",123,380,380,"SWE",163,"SWE",144,380,1092,"SWE",752,154,"Northern Europe",150,"Europe",10,380
+"7801","Switzerland",124,225,225,"CHE",31,"CHE",146,225,1100,"CHE",756,155,"Western Europe",150,"Europe",10,225
+"7864","Syria",97,652,652,"SYR",166,"SYR",463,652,1110,"SYR",760,145,"Western Asia",142,"Asia",6,652
+"7927","Taiwan",98,713,713,"TAW",167,"",528,713,231,"TWN",NA,NA,"Eastern Asia",142,"Asia",3,713
+"7987","Tajikistan",181,702,702,"TJK",171,"TJK",923,702,1115,"TJK",762,143,"Central Asia",142,"Asia",9,702
+"8005","Tanzania",42,510,510,"TZA",178,"TZA",738,510,1120,"TZA",834,14,"Eastern Africa",2,"Africa",1,510
+"8053","Thailand",99,800,800,"THA",170,"THA",578,800,1130,"THA",764,35,"South-Eastern Asia",142,"Asia",4,800
+"8116","Togo",43,461,461,"TGO",169,"TGO",742,461,1140,"TGO",768,11,"Western Africa",2,"Africa",1,461
+"8165","Tonga",184,955,955,"TON",173,"TON",866,955,1215,"TON",776,61,"Polynesia",9,"Oceania",5,955
+"8204","Trinidad and Tobago",64,52,52,"TTO",174,"TTO",369,52,1150,"TTO",780,29,"Caribbean",19,"Americas",8,52
+"8251","Tunisia",44,616,616,"TUN",175,"TUN",744,616,1160,"TUN",788,15,"Northern Africa",2,"Africa",6,616
+"8304","Turkey",125,640,640,"TUR",176,"TUR",186,640,1170,"TUR",792,145,"Western Asia",142,"Asia",6,640
+"8367","Turkmenistan",182,701,701,"TKM",172,"TKM",925,701,1172,"TKM",795,143,"Central Asia",142,"Asia",9,701
+"8385","Tuvalu",947,NA,947,"TVA",177,"",NA,NA,NA,"",NA,NA,"Polynesia",NA,"Oceania",NA,NA
+"8407","Tuvalu",947,947,947,"TVA",177,"",NA,947,NA,"",798,61,"Polynesia",9,"Oceania",NA,947
+"8416","U.S.S.R.",127,365,365,"SVU",162,"RUS",922,364,1190,"SUN",643,151,"Eastern Europe",150,"Europe",9,365
+"8461","Uganda",45,500,500,"UGA",179,"UGA",746,500,1180,"UGA",800,14,"Eastern Africa",2,"Africa",1,500
+"8508","Ukraine",183,369,369,"UKR",180,"UKR",926,369,1183,"UKR",804,151,"Eastern Europe",150,"Europe",9,369
+"8526","United Arab Emirates",141,696,696,"ARE",4,"ARE",466,696,NA,"ARE",784,145,"Western Asia",142,"Asia",11,696
+"8564","United Kingdom",126,200,200,"GBR",63,"GBR",112,200,1210,"GBR",826,154,"Northern Europe",150,"Europe",10,200
+"8627","United States of America",65,2,2,"USA",182,"USA",111,2,1220,"USA",840,21,"Northern America",19,"Americas",10,2
+"8690","Uruguay",76,165,165,"URY",181,"URY",298,165,1240,"URY",858,5,"South America",19,"Americas",7,165
+"8753","Uzbekistan",185,704,704,"UZB",183,"UZB",927,704,1241,"UZB",860,143,"Central Asia",142,"Asia",9,704
+"8771","Vanuatu",134,935,935,"VUT",189,"VUT",846,935,1243,"VUT",548,54,"Melanesia",9,"Oceania",5,935
+"8800","Venezuela",77,101,101,"VEN",185,"VEN",299,101,1250,"VEN",862,5,"South America",19,"Americas",7,101
+"8863","Viet Nam",186,816,818,"VNM",186,"VNM",582,818,1262,"VNM",704,35,"South-Eastern Asia",142,"Asia",4,816
+"8896","Yemen",190,679,679,"YEM",191,"YEM",474,679,1280,"YEM",887,145,"Western Asia",142,"Asia",6,679
+"8915","Yemen Arab Republic",100,678,678,"YNO",192,"YEM",474,678,1280,"YAR",887,145,"Western Asia",142,"Asia",6,678
+"8959","Yemen PDR (South)",178,680,680,"YSO",193,"",NA,680,1050,"YMD",NA,145,"Western Asia",142,"Asia",6,680
+"8982","Yugoslavia",128,345,345,"YUG",194,"YUG",965,345,1290,"YSR",NA,39,"Southern Europe",150,"Europe",9,345
+"9027","Zambia",47,551,551,"ZMB",197,"ZMB",754,551,1300,"ZMB",894,14,"Eastern Africa",2,"Africa",1,551
+"9072","Zimbabwe",48,552,552,"ZWE",198,"ZWE",698,552,1214,"ZWE",716,14,"Eastern Africa",2,"Africa",1,552
