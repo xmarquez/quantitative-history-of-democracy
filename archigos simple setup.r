@@ -2,7 +2,7 @@
 # http://www.rochester.edu/college/faculty/hgoemans/data.htm
 # This is for setting up the archigos datset, case file
 
-archigos.simple <- read.dta("Archigos_2.9-Public.dta")
+archigos.simple <- read.dta("../Data/Archigos_2.9-Public.dta")
 
 archigos.simple$startdate <- as.Date(archigos.simple$startdate,format="%d/%m/%Y")
 archigos.simple$enddate <- as.Date(archigos.simple$enddate,format="%d/%m/%Y")

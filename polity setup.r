@@ -3,7 +3,7 @@
 # You will need to download it from the web
 
 code.table <- read.csv("codes.csv")
-polity <- read.csv("p4v2010.csv")
+polity <- read.csv("../Data/p4v2010.csv")
 
 #create factors
 polity$exrec2 <- as.factor(polity$exrec)

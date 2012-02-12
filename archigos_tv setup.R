@@ -3,7 +3,7 @@
 # This is for setting up the archigos datset, time-varying file
 
 library(foreign)
-archigos <- read.dta("Archigos_v.2.9_tv-Public.dta")
+archigos <- read.dta("../Data/Archigos_v.2.9_tv-Public.dta")
 
 archigos$startdate <- as.Date(archigos$startdate,format="%d/%m/%Y")
 archigos$enddate <- as.Date(archigos$enddate,format="%d/%m/%Y")
