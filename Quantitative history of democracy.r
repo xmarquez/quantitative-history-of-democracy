@@ -7,38 +7,63 @@ require(plotrix)
 
 # These are convenience functions for creating the plots
 
-# This one draws vertical lines around the major events: WWI, WWII, 
-# African decolonization in 1960, the end of the cold war in 1989
-major.events <- function(start=1900) {
-  abline(v=c(1914-start,1918-start,1939-start,1945-start,1960-start,1989-start),
+# This one draws shaded lines around the major events: the great depression,
+# WWI, WWII, African decolonization in 1960, the end of the cold war in 1989
+# the breakup of the Soviet Union in 1991
+major.events <- function(start=1900, ylim=NULL) {
+  color <- rgb(190, 190, 190, alpha=70, maxColorValue=255)
+  rect(xleft=1939-start, xright=1945-start, ybottom=0, ytop=ylim, 
+       border="transparent", col=color)
+  rect(xleft=1914-start, xright=1918-start, ybottom=0, ytop=ylim, 
+       border="transparent", col=color)
+  rect(xleft=1989-start, xright=1991-start, ybottom=0, ytop=ylim, 
+       border="transparent", col=color)
+  
+  abline(v=c(1914-start,1918-start,1929-start,1939-start,1945-start,1960-start,1989-start,
+             1991-start),
          col="lightgray")  
 }
 
-# This one is a convenience wrapper for stackpoly
+# This one is a convenience wrapper for stackpoly in plotrix
 stackplot <- function (table, title=NULL,start=1800,end=2010,by=10,
                    xlab="Year",ylab="Number of countries",legend=FALSE,
-                       labels=NULL,color=FALSE) {
+                       labels=NULL,color=FALSE,colors=NULL,labelcolors=NULL) {
   
-  colors <- gray(0:ncol(table)/ncol(table))
+  col <- gray(0:ncol(table)/ncol(table))
   if(color) {
-    colors <- rainbow(ncol(table))
-  }
-
+    col <- colors
+    }
+  
   stackpoly(table,main=title,
-            stack=TRUE, col=colors,
+            stack=TRUE, col=col,
             xaxlab=seq(start,end,by=by),xat=seq(0,end-start+1,by=by),
             staxx=TRUE,xlab=xlab,ylab=ylab)
-  major.events(start)
+  major.events(start,ylim=max(margin.table(table,margin=1)))
   if (legend) {
-    legend(legend=labels,fill=colors,x="topleft")
+    legend(legend=labels,fill=labelcolors,x="topleft",cex=0.5)
   }
   }
 
 
-  
+# Basic plot of executive recruitment patterns
+# figure 1
 
 t1 <- with(polity, table(year,exrec2))
-stackplot(t1,title="Executive recruitment patterns, 1800-2010")
+
+labels <- levels(polity$exrec2)[4:length(levels(polity$exrec2))]
+interruption.colors <- gray(0:2/3)
+regime.colors <- rainbow(length(labels))
+colors <- c(interruption.colors,regime.colors)                      
+stackplot(t1,title="Executive recruitment patterns, 1800-2010",color=TRUE,
+          colors=colors,legend=TRUE,labels=labels,labelcolors=regime.colors)
+
+# Same as this:
+# stackpoly(t1,main="Executive recruitment patterns, 1800-2010",
+#           stack=TRUE, col=colors,
+#           xaxlab=seq(1800,2010,by=10),xat=seq(0,2010-1800+1,by=10),
+#           staxx=TRUE,xlab="Year",ylab="Number of countries")
+# major.events(1800)
+# legend(legend=labels,fill=regime.colors,x="topleft",cex=0.5)
 
 #labels <- levels(polity$exrec2)
 #legend(legend=labels,fill=gray(0:length(labels)/length(labels)),x="topleft")
@@ -47,137 +72,156 @@ stackplot(t1,title="Executive recruitment patterns, 1800-2010")
 start <- 1900
 t1.5 <- ts(100*prop.table(t1,margin=1),start=1800)
 stackplot(window(t1.5,start),title="Executive recruitment patterns",
-          ylab="Proportion of independent states",start=start)
+          ylab="Proportion of independent states",start=start,color=TRUE,
+          colors=colors,legend=TRUE,labels=labels,labelcolors=regime.colors)
+
+# Same graph, as lattice
+require(lattice)
+my.plot <- xyplot(window(t1.5,start),ylim=c(0,50))
+update(my.plot, panel = function(...) {
+  panel.abline(v=c(1914,1918,1929,1939,1945,1960,1989,
+                   1991), col = "lightgray")
+  panel.xyplot(...)
+})
 
 
-# The distribution of types of political competition
-
-start <- 1800
-t2 <- with(polity, table(year,polcomp2))
-labels <- levels(polity$polcomp2)
-stackplot(t2,"Types of political competition, 1800-2010")
-
-#legend(legend=labels,fill=1:length(labels),x="topleft")
-
-# Same graph, but in proportional terms
-t2.5 <- ts(100*prop.table(t2,margin=1),start=1800)
-start <- 1900
-stackplot(window(t2.5,start),title="Types of political competition",
-          ylab="Proportion of independent states",start=start)
-
-# The distribution of executive constraints
-
-start <- 1800
-t3 <- with(polity, table(year,exconst2))
-labels <- levels(polity$exconst2)
-stackplot(t3,title="Types of executive constraint, 1800-2010")
-
-# A proportional version of the same
-start <- 1900
-t3.5 <- ts(100*prop.table(t3,margin=1),start=1800)
-stackplot(window(t3.5,start),title="Types of executive constraint, 1800-2010",
-          start=start,ylab="Proportion of independent states")
-
-source("archigos_tv setup.R")
-
-#Leadership transitions per year
-t4 <- with(archigos, table(year, exit_tv))
-labels <- levels(archigos$exit_tv)
-start <- 1840
-stackplot(t4,title="Types of leadership transitions, 1840-2004",
-          start=start,end=2004,ylab="Number of leaders",color=TRUE)
-
-# A proportional version of the same
-start <- 1900
-t4.5 <- ts(100*prop.table(t4,margin=1),start=1840)
-stackplot(window(t4.5,start),title="Types of leadership transitions, 1840-2004",
-          start=start,end=2004,ylab="Proportion of leaders",color=TRUE)
-#legend(legend=labels,fill=gray(0:length(labels)/length(labels),x="topleft"))
-
-
+#Figure 3
 # Competitive regimes by region
-t7 <- with(subset(polity, exrec == 8), table(year, un_continent_name))
+t7 <- with(subset(polity, exrec %in% c(7,8)), table(year, un_continent_name))
 labels <- levels(polity$un_continent_name)
 stackplot(t7,title="Competitive regimes by region, 1800-2010",legend=TRUE,
-          labels=labels,color=TRUE)
+          labels=labels,color=TRUE, labelcolors=rainbow(length(labels)))
 
-# A proportional version of the same, starting in 1960
-
-t7.5<-ts(100*prop.table(t7,margin=1),start=1800)
-start=1960
-stackplot(window(t7.5,start=start),title="Competitive regimes by region, 1800-2010",
-          legend=TRUE,labels=labels,color=TRUE, start=1960,
-          ylab="Proportion of regimes")
-
-# For comparison purposes here are the proportions of countrie in the dataset by year
-t14 <- with(polity, 100*prop.table(table(year, un_continent_name),margin=1))
-labels <- levels(polity$un_continent_name)
-stackplot(t14,
-          title="Distribution of countries by region in Polity IV dataset",
-          color=TRUE,legend=TRUE,labels=labels,
-          ylab="Proportion of all regimes in the dataset")
 
 # What percentages of the regimes are democratic 
-# within each region (as proportion of the toal number of regimes
+# within each region (as proportion of the total number of regimes
 # in the region)
 
 require(lattice)
 
+#Figure 4
 t17.5 <- with(polity, table(year, un_region_name))
-t22 <- with(subset(polity, exrec== 8), table(year, un_region_name))
+t22 <- with(subset(polity, exrec %in% c(7,8)), table(year, un_region_name))
 t22 <- ts(100*t22/t17.5,start=1800)
-xyplot(window(t22,start=1950),ylim=c(0,100),xlab="Year",
-       ylab="Proportion of competitive electoral regimes in region as % of independent states")
+my.plot <- xyplot(window(t22,start=1950),ylim=c(0,100),xlab="Year",
+       ylab="Proportion of electoral regimes in region as % of independent states")
+update(my.plot, panel = function(...) {
+  panel.abline(v=c(1914,1918,1939,1945,1960,1989,
+                   1991), col = "lightgray")
+  panel.xyplot(...)
+})
 
-t17.5 <- with(polity, table(year, un_continent_name))
-t22 <- with(subset(polity, exrec== 8), table(year, un_continent_name))
-t22 <- ts(100*t22/t17.5,start=1800)
-xyplot(t22,ylim=c(0,100),xlab="Year",ylab="Proportion of competitive electoral regimes in region")
 
-#Proportion of hereditary monarchies per region
-t17.5 <- with(polity, table(year, un_region_name))
-t22 <- with(subset(polity, exrec > 0 & exrec < 3), table(year, un_region_name))
-t22 <- ts(100*t22/t17.5,start=1800)
-xyplot(t22,ylim=c(0,100),xlab="Year",ylab="Proportion of hereditary monarchies in region as % of independent states")
-
-# Proportion of heavily repressive regimes per region
-t22 <- with(subset(polity, polcomp %in% c(0,1)), table(year, un_region_name))
-t22 <- ts(100*t22/t17.5,start=1800)
-xyplot(window(t22,start=1945),ylim=c(0,100),xlab="Year",ylab="Proportion of heavily repressive regimes in region as % of independent states")
-
-# A more detailed regional breakdown
-
-t8 <- with(subset(polity, exrec == 8), table(year, un_region_name))
-labels <- levels(polity$un_region_name)
-stackpoly(t8,stack=TRUE, col=1:length(labels),main="Competitive regimes by region, 1800-2010",xaxlab=seq(1800,2010,by=10),xat=seq(1,212,by=10),staxx=TRUE,xlab="Year",ylab="Number of countries")
-legend(legend=labels,fill=1:length(labels),x="topleft")
-
+#Figure 5
 # Non-competitive regimes by region
-t9 <- with(subset(polity, exrec > 0 & exrec < 8), table(year, un_continent_name))
+t9 <- with(subset(polity, exrec %in% c(1:6)), table(year, un_continent_name))
 labels <- levels(polity$un_continent_name)
-stackpoly(t9,stack=TRUE, col=1:length(labels),main="Non democratic regimes by region, 1800-2010",xaxlab=seq(1800,2010,by=10),xat=seq(1,212,by=10),staxx=TRUE,xlab="Year",ylab="Number of countries")
-legend(legend=labels,fill=1:length(labels),x="topleft")
+stackplot(t9,title="Non-competitive regimes by region, 1800-2010",
+          ylab="Number of countries",legend=TRUE,
+          labels=labels,color=TRUE,labelcolors=rainbow(length(labels)))
 
-# Monarchies by region
-t10 <- with(subset(polity, exrec > 0 & exrec < 3), table(year, un_continent_name))
-labels <- levels(polity$un_continent_name)
-stackpoly(t10,stack=TRUE, col=1:length(labels),main="Hereditary monarchies by region, 1800-2010",xaxlab=seq(1800,2010,by=10),xat=seq(1,212,by=10),staxx=TRUE,xlab="Year",ylab="Number of countries")
-legend(legend=labels,fill=1:length(labels),x="topleft")
 
-# Limited elite selection regimes by region
-t11 <- with(subset(polity, exrec == 3), table(year, un_continent_name))
-labels <- levels(polity$un_continent_name)
-stackpoly(t11,stack=TRUE, col=1:length(labels),main="Limited elite selection regimes by region, 1800-2010",xaxlab=seq(1800,2010,by=10),xat=seq(1,212,by=10),staxx=TRUE,xlab="Year",ylab="Number of countries")
-legend(legend=labels,fill=1:length(labels),x="topleft")
+#Now we merge with PWT
+source("merge polity and pwt7.r")
+postwarpolity <- subset(polity, year > 1949 & year < 2010)
+require(plyr)
 
-# Suppressed competition regimes
-t12 <- with(subset(polity, polcomp > 0 & polcomp < 3), table(year, un_continent_name))
-labels <- levels(polity$un_continent_name)
-stackpoly(t12,stack=TRUE, col=1:length(labels),main="Regimes with limited competition by region, 1800-2010",xaxlab=seq(1800,2010,by=10),xat=seq(1,212,by=10),staxx=TRUE,xlab="Year",ylab="Number of countries")
-legend(legend=labels,fill=1:length(labels),x="topleft")
+postwarpolity <- ddply(postwarpolity, 
+                       .(year),transform , 
+                       incomequantile = cut(rgdpl,quantile(rgdpl,na.rm=TRUE)))
+postwarpolity <- transform(postwarpolity, incomequantile2 = incomequantile)
+quantilenames <- rep(c("Poorest","2nd","3rd","Richest"),60)
+levels(postwarpolity$incomequantile2) <- quantilenames
 
-# A proportional version of the same
-t13<-100*prop.table(t12,margin=1)
-labels <- levels(polity$un_continent_name)
-stackpoly(t13,stack=TRUE, col=1:length(labels),main="Regimes with limited competition by region, 1800-2010",xaxlab=seq(1800,2010,by=10),xat=seq(1,212,by=10),staxx=TRUE,xlab="Year",ylab="Proportion of regimes of limited competition")
-legend(legend=labels,fill=1:length(labels),x="topleft")
+#these are various potential breakdowns by income
+
+regimes.per.income <- with(postwarpolity, 
+                           table(year, incomequantile2))
+
+electorally.competitive.regimes.per.income <- with(subset(postwarpolity, exrec==8),
+                                       table(year,
+                                             incomequantile2))
+
+competitive.regimes.per.income <- with(subset(postwarpolity, exrec %in% c(7,8)),
+                                       table(year,
+                                             incomequantile2))
+
+repressive.regimes.per.income <- with(subset(postwarpolity, polcomp %in% c(1,2)),
+                                      table(year, incomequantile2))
+
+monarchies.per.income <- with(subset(postwarpolity, exrec %in% c(1,2)),
+                              table(year,
+                                    incomequantile2))
+
+limited.elite.regimes.per.income <- with(subset(postwarpolity, exrec == 3),
+                                         table(year,
+                                               incomequantile2))
+
+
+tcomp <-  ts(100*(competitive.regimes.per.income / regimes.per.income),
+             start=1950)
+
+tcomp2 <- ts(100*prop.table(competitive.regimes.per.income,margin=1),
+             start=1950)
+
+tecomp <-  ts(100*(electorally.competitive.regimes.per.income / regimes.per.income),
+             start=1950)
+
+tecomp2 <- ts(100*prop.table(electorally.competitive.regimes.per.income,margin=1),
+             start=1950)
+
+rcomp <- ts(100*(repressive.regimes.per.income / regimes.per.income),
+            start=1950)
+
+rcomp2 <- ts(100*prop.table(repressive.regimes.per.income,margin=1),
+             start=1950)
+
+mcomp <- ts(100*(monarchies.per.income / regimes.per.income),
+            start=1950)
+
+mcomp2 <- ts(100*prop.table(monarchies.per.income,margin=1),
+             start=1950)
+
+lelite <- ts(100*(limited.elite.regimes.per.income / regimes.per.income),
+            start=1950)
+
+#Fig 6
+my.plot <- xyplot(tcomp,ylim=c(0,100), 
+                  xlab="Year",
+                  main="Proportion of competitive regimes in each income quantile")
+update(my.plot, panel = function(...) {
+  panel.abline(v=c(1914,1918,1929,1939,1945,1960,1989,
+                   1991), col = "lightgray")
+  panel.xyplot(...)
+})
+
+#Fig 7
+my.plot <- xyplot(tecomp,ylim=c(0,100),
+                  xlab="Year",
+                  main="Proportion of fully competitive regimes in each income quantile")
+update(my.plot, panel = function(...) {
+  panel.abline(v=c(1914,1918,1929,1939,1945,1960,1989,
+                   1991), col = "lightgray")
+  panel.xyplot(...)
+})
+
+
+# Calculating transition matrixes
+all.trans <- round(100*prop.table(with(polity,table(exrec,toexrec)),margin=1),2)
+postwar <- round(100*prop.table(with(subset(polity,year > 1945),
+                                     table(exrec,toexrec)),margin=1),2)
+coldwar <- round(100*prop.table(with(subset(polity,year > 1945 & year < 1989),
+                                     table(exrec,toexrec)),margin=1),2)
+postcoldwar <- round(100*prop.table(with(subset(polity,year > 1989),
+                                         table(exrec,toexrec)),margin=1),2)
+prewar <- round(100*prop.table(with(subset(polity,year < 1939),
+                                    table(exrec,toexrec)),margin=1),2)
+
+#Tables 1 and 2 are made this way
+postwar.trans.income <- with(postwarpolity,table(exrec, toexrec, incomequantile2))
+postwar.trans.income.prop <- round((prop.table(all.trans.income,margin=c(1,3))),2)
+
+# A regional transition matrix
+all.trans.region <- with(polity,table(exrec, toexrec, un_continent_name))
+all.trans.region.prop <- round(100*(prop.table(all.trans.region,margin=c(1,3))),2)
+
